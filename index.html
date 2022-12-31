@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- script -->
+    <script defer src="script.js"></script>
+    
+    <title>StopWatch</title>
+</head>
+<body>
+    <!-- Stop Watch -->
+    <main class="stopWatch">
+        <div class="container">
+            <div> 
+                <p id="heading">STOPWATCH</p>
+            </div>
+    
+            <!-- stop watch time counter screen -->
+            <div class="display">
+                <span class="time" id="hour">00</span>
+                <span class="text">Hr</span>
+                <span class="time sep"> : </span>
+                <span class="time" id="minute">00</span>
+                <span class="text">Min</span>
+                <span class="time sep"> : </span>
+                <span class="time" id="second">00</span>
+                <span class="text">Sec</span>
+            </div>
+    
+            <!-- start, stop and reset buttons -->
+            <div>
+                <button class="btn" id="start">START</button>
+                <button class="btn" id="stop">STOP</button>
+                <button class="btn" id="reset">RESET</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

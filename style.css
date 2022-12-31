@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(black,rgb(3, 3, 60),rgb(55, 3, 3),black);
+}
+
+.stopWatch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* stopwatch container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 40px;border: 2px solid white;
+    border-radius: 400px;box-shadow: -10px -10px 30px 5px red, 5px 5px 30px 5px blue;animation: glow .5s ease-in-out infinite;
+    background: rgb(0, 0, 55);
+    position: absolute;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: -10px -10px 30px 5px red, 10px 10px 30px 5px blue;
+    }
+    25% {
+        box-shadow: -10px -10px 30px 5px orangered, 10px 10px 30px 5px yellow;
+    }
+    50% {
+        box-shadow: -10px -10px 30px 5px red, 10px 10px 30px 5px violet;
+    }
+    75% {
+        box-shadow: -10px -10px 30px 5px orangered, 10px 10px 30px 5px blue;
+    }
+    100% {
+        box-shadow: -10px -10px 30px 5px red, 5px 5px 30px 5px blue;
+    }
+}
+
+/* heading */
+#heading {
+    color: white;
+    margin-bottom: 90px;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+/* timer display */
+.display {
+    /* border: 2px solid rgb(197, 17, 17); */
+    padding: 10px 22px;
+    padding-top: 2px;
+    border-radius: 2rem; 
+    box-shadow: rgb(53, 229, 238) 0px 0px 80px 4px;
+    border: 3px solid rgb(185, 72, 20);
+    margin-bottom: 20px;
+    background-color: rgb(2, 2, 87);
+}
+
+/* time digits */
+.time {
+    color: rgb(182, 229, 245);
+    font-size: 60px;
+    text-align: center;
+}
+
+.text {
+    color: antiquewhite;
+    font-size: 10px;
+}
+
+.sep{
+    color: rgb(104, 132, 156);
+    margin: 16px;
+    font-size: 80px;
+}
+
+/* function buttom */
+.btn {
+    margin: 50px 30px;
+    background-color: rgb(6, 6, 60);
+    color: rgb(230, 245, 17);
+    font-weight: 500;
+    padding: 8px 16px;
+    border: 2px solid green;
+    border-radius: 18px;
+}
